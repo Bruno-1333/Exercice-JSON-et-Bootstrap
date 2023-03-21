@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Aventurier</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="m-3">
+
+<section class="container">
+    <div class="row">
+        <div class="col-8 border border-3 rounded border-secondary-subtle">
+            <h1 class="fw-semibold mb-5">Aventuriers</h1>
+            <div class="row justify-content-center my-5">
+                <div class="form-group row">
+                    <form action="index.html" method="post " onsubmit="return stockage()" class="fw-semibold">
+
+                        <label for="id" class="form-label mb-3">Id: </label>
+                        <input type="number" id="id" name="id" class="form-control border border-3 border-dark mb-4">
+                        <label for="nom" class="form-label mb-3">Nom</label>
+                        <input type=text id="nom" name="nom" class="form-control border border-3 border-dark mb-4"required>
+                        <label for="couleur" class="form-label mb-3">Couleur: </label>
+                        <input type="color" id="couleur" name="couleur"
+                               class="form-control border border-3 border-dark mb-4" required>
+                        <label for="avatar" class="form-label mb-3">Avatar</label>
+                        <input type=url id="avatar" name="avatar" class="form-control border border-3 border-dark mb-4"required>
+                        <input type="submit" value="Soumettre">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
